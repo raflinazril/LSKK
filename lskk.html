@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+    <title>PT. LSKK</title>
+    <link rel="stylesheet" href="lskk.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">LSKK</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#gallery">Gallery</a>
+            <a class="nav-link" href="#contact us">Contact us</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  <div class="content">
+    <div class="container">
+      <div class="header-grid">
+        <div class="img-head">
+          <img src="lskk.jpg" />
+        </div>
+        <div class="txt-head">
+          <h1>PT Langgeng Sejahtera Kreasi Komputasi</h1>
+          <p>PT. LSKK (Langgeng Sejahtera Kreasi Komputasi) was founded in 2008 as a company in the field of technology integration. This company was founded to contribute to national development, especially in the field of electrotechnical and engineering in general. Various products have been produced since 2008. Among them are products in collaboration with the Indonesian National Army such as Tactical Vests, Anoa Simulator, Miss Distance Indicator, How Can Pams, Posko Dahanud Mobile, Hostile Artillery Locator.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="container">
+      <h1>About</h1>
+      <div class="about-grid">
+        <div class="about">
+          <h1>Fast</h1>
+          <p>Fast response for sure</p>
+        </div>
+        <div class="about">
+          <h1>Friendly</h1>
+          <p>Friendly mentor makes you comfortable.</p>
+        </div>
+        <div class="about">
+          <h1>Easy</h1>
+          <p>The explanations and answers to questions from the mentor will be easy to understand.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="container">
+      <div class="gallery">
+        <h1>Gallery</h1>
+        <div class="pictures">
+          <img src="lskk1.jpg" />
+          <img src="lskk2.jpg" />
+          <img src="lskk3.jpg" />
+          <img src="lskk4.jpg" />
+          <img src="lskk5.jpg" />
+          <img src="lskk6.jpg" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="container">
+      <div class="contactus">
+      <h1>Contact Us</h1>
+        <form action="">
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" />
+
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email" />
+
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" />
+
+          <label for="massage" class="massage">Your Massage</label>
+          <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+
+          <button type="button">KIRIM</button>
+       </form>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2022 by Rafli Nazril Setiadi</p>
+  </footer>
+
+   <!-- JS -->
+    <script>
+      const burger = document.querySelector(".burger");
+      const sidebar = document.querySelector(".sidebar");
+      const bgSidebar = document.querySelector(".bg-sidebar");
+      burger.addEventListener("click", function () {
+      this.classList.toggle("change");
+      sidebar.classList.toggle("change");
+      bgSidebar.classList.toggle("change");
+    });
+    bgSidebar.addEventListener("click", function () {
+      this.classList.remove("change");
+      sidebar.classList.remove("change");
+      burger.classList.remove("change");
+    });
+    </script>
+  </body>
+</html>
